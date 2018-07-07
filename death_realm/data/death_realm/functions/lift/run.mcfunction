@@ -22,8 +22,8 @@ execute at @e[type=armor_stand,tag=Stop] positioned ~ ~-0.5 ~ if entity @e[type=
 
 #电梯门指令 不想新开mcf了
 #up   open&close
-execute at @e[tag=stop] if entity @e[distance=0,tag=DTstop] run fill 3 61 95 3 63 95 air
+execute at @e[tag=stop] if entity @e[distance=0,tag=DTstop] run fill 3 61 95 3 63 95 air destroy
 execute at @e[tag=stop] unless entity @e[distance=0,tag=DTstop] if block 3 61 95 air run fill 3 61 95 3 63 95 iron_bars
 #down open&close
-execute at @e[tag=Stop] if entity @e[distance=0,tag=DTstop] run fill 3 41 95 3 43 95 air
+execute at @e[tag=Stop] if entity @e[distance=0,tag=DTstop] run fill 3 41 95 3 43 95 air destroy
 execute at @e[tag=Stop] unless entity @e[distance=0,tag=DTstop] if block 3 41 95 air run fill 3 41 95 3 43 95 iron_bars
