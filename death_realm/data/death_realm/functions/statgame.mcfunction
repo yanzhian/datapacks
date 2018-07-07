@@ -1,4 +1,3 @@
-
 #分配队伍
 team add Hider 人类
 team add Ghost 幽灵
