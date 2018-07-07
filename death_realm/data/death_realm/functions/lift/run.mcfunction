@@ -6,11 +6,11 @@
 #电梯是否上升?  有玩家不上升 有人偶不上升  顶层了不上升
 execute at @e[tag=DTpl] positioned ~-1 ~ ~-1 if entity @e[type=armor_stand,dx=2,dy=1,dz=2,scores={Ht=1..}] run scoreboard players set up lift 0
 execute at @e[tag=DTpl] positioned ~-1 ~ ~-1 if entity @a[dx=2,dy=2,dz=2,gamemode=adventure] run scoreboard players set up lift 0
-execute at @e[tag=Stop] if entity @e[distance=0,tag=DTstop] run scoreboard players set up lift 0
+execute at @e[tag=stop] if entity @e[distance=0,tag=DTstop] run scoreboard players set up lift 0
 execute if score up lift matches 1 run function death_realm:lift/up
 
 #电梯是否下降?  底层了不下降 有玩家下降 有人偶不动
-execute at @e[tag=stop] if entity @e[distance=0,tag=DTstop] run scoreboard players set down lift 0
+execute at @e[tag=Stop] if entity @e[distance=0,tag=DTstop] run scoreboard players set down lift 0
 execute at @e[tag=DTpl] positioned ~-1 ~ ~-1 if entity @a[dx=2,dy=2,dz=2,gamemode=adventure] run scoreboard players set down lift 1
 execute at @e[tag=DTpl] positioned ~-1 ~ ~-1 if entity @e[type=armor_stand,dx=2,dy=1,dz=2,scores={Ht=1..}] run scoreboard players set down lift 0
 execute if score down lift matches 1 run function death_realm:lift/down
