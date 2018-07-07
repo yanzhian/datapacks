@@ -2,7 +2,7 @@
 #tag = stop 的as 为up的stop标记as
 #tag = Stop 的as 为down的stop标记as
 #tag = DTstop 的as 为 电梯中间下面用于标记高度的as
-execute at @e[tag=DTpl] positioned ~-1 ~ ~-1 if entity @e[type=armor_stand,dx=2,dy=1,dz=2,scores={Ht=1..}] unless entity @a[dx=2,dy=2,dz=2,gamemode=adventure] run function lift:down
+execute at @e[tag=DTpl] positioned ~-1 ~ ~-1 if entity @e[type=armor_stand,dx=2,dy=1,dz=2,scores={Ht=1..}] unless entity @a[dx=2,dy=2,dz=2,gamemode=adventure] run function death_realm:lift/down
 
 
 

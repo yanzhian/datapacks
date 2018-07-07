@@ -1,1 +1,1 @@
-tp @e[type=armor_stand,tag=DT1] ~ ~0.075 ~
+execute as @e[type=armor_stand,tag=DT1] at @s run ~ ~0.075 ~
