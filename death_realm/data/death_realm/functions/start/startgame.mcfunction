@@ -28,7 +28,6 @@ replaceitem entity @a[team=Hider] armor.head minecraft:carved_pumpkin
 #分配纸条注意下删除纸条是name而不是tag
 tag @e[tag=ZT,limit=12] add target
 replaceitem entity @e[tag=ZT,tag=target] armor.chest minecraft:paper{Damage:0s,Count:1b,tag:{display:{Name:"ZT"},}}
-/execute @e[tag=ZT,tag=target] ~ ~ ~ /summon Villager ~ ~0.3 ~ {CustomName:"ZT",Silent:1,NoAI:1,Invulnerable:1,Offers:{Recipes:[]},ActiveEffects:[{Id:14,Amplifier:0,Duration:999999999,ShowParticles:0b}]}
 title @a title {"text":"","extra":[{"text":"还剩下","bold":"true","color":"aqua"},{"score":{"name":"MB","objective":"MB"}},{"text":""},{"text":"张纸条","bold":"true","color":"aqua"}]}
 
 #正常模式
