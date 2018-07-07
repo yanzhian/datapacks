@@ -1,4 +1,3 @@
-
 #添加计分板
 team add Hider 人类
 team add Ghost 幽灵

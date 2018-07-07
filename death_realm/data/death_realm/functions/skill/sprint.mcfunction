@@ -1,0 +1,1 @@
+scoreboard players add @a[team=Hider,scores={Hs=1..}] Hh 40
