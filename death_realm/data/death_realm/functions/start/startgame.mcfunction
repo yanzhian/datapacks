@@ -25,7 +25,7 @@ replaceitem entity @a[team=Hider] armor.head minecraft:carved_pumpkin
 
 
 
-#分配纸条注意下删除纸条是name而不是tag
+#分配纸条注意下删除纸条是name而不是tag，差个带NBT的村民
 tag @e[tag=ZT,limit=12] add target
 replaceitem entity @e[tag=ZT,tag=target] armor.chest minecraft:paper{Damage:0s,Count:1b,tag:{display:{Name:"ZT"},}}
 title @a title {"text":"","extra":[{"text":"还剩下","bold":"true","color":"aqua"},{"score":{"name":"MB","objective":"MB"}},{"text":""},{"text":"张纸条","bold":"true","color":"aqua"}]}
