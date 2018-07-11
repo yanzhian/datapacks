@@ -2,7 +2,8 @@
     "replace": false,
     "values": [
       "death_realm:skill/sprint",
-      "death_realm:lift/run"
+      "death_realm:lift/run",
+      "death_realm:door/run"
     ]
   }
   
