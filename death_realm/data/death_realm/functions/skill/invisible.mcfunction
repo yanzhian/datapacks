@@ -1,0 +1,1 @@
+execute as @a[team=Ghost,scores={Sprint=0}] run effect give @s minecraft:invisibility 1 0 true
