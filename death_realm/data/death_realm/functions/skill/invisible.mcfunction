@@ -1,2 +1,1 @@
 execute as @a[team=Ghost] run effect give @s minecraft:invisibility 1 0 true
-execute as @a[team=Ghost,scores={Sprint=1..}] at @s run particle minecraft:dust 50 20 60 1.5 ~ ~1.5 ~ 0.125 0.325 0.125 0.2 35 normal @a[team=Hider,distance=..5]
