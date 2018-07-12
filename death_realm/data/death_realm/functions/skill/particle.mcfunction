@@ -7,3 +7,4 @@ execute as @a[team=Ghost,scores={Sprint=2..}] at @s run particle minecraft:dust 
 #幽灵看Ghost的特效
 execute as @a[team=Ghost,scores={Sprint=2..}] at @s run particle minecraft:dust 50 20 60 1.5 ~ ~1.5 ~ 0.125 0.325 0.125 0.2 35 force @a[team=Peace]
 scoreboard players set @a[scores={Sprint=2..}] Sprint 0
+scoreboard players set @a Jump 0
