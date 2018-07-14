@@ -1,14 +1,3 @@
-#添加计分板
-team add Hider 人类
-team add Ghost 幽灵
-scoreboard objectives add Hh dummy 人类体力
-scoreboard objectives add Gh dummy 幽灵体力
-scoreboard objectives add GS minecraft.custom:minecraft.sprint_one_cm 幽灵奔跑
-scoreboard objectives add Hs minecraft.custom:minecraft.sprint_one_cm 人类奔跑
-scoreboard objectives add pickup minecraft.custom:minecraft.talked_to_villager 拾取
-scoreboard objectives add MB dummy 目标
-scoreboard objectives add Gc minecraft.custom:minecraft.sneak_time 幽灵潜行
-
 #分配队伍
 team join Ghost @r
 team join Hider @a[team=!Ghost]
@@ -27,12 +16,13 @@ replaceitem entity @a[team=Hider] armor.head minecraft:carved_pumpkin
 
 #分配纸条注意下删除纸条是name而不是tag
 tag @e[tag=ZT,limit=12] add target
-replaceitem entity @e[tag=ZT,tag=target] armor.chest minecraft:paper{Damage:0s,Count:1b,tag:{display:{Name:"ZT"},}}
-title @a title {"text":"","extra":[{"text":"还剩下","bold":"true","color":"aqua"},{"score":{"name":"MB","objective":"MB"}},{"text":""},{"text":"张纸条","bold":"true","color":"aqua"}]}
+execute as @e[tag=ZT,tag=target] run data merge entity @s {HandItems:[{id:"minecraft:paper",Damage:0s,Count:1b,tag:{display:{Name:"{\"text\":\"\",\"extra\":[{\"text\":\"神秘的纸条\",\"color\":\"gold\",\"bold\":true}]}",Lore:["听说之安博士需要这个"]}}},{}]}
+title @a title {"text":" "}
+title @a subtitle {"text":"","extra":[{"text":"还剩下","bold":"true","color":"aqua"},{"score":{"name":"pLeft","objective":"pLeft"}},{"text":""},{"text":"张纸条","bold":"true","color":"aqua"}]}
 
 #正常模式
-tag @a[team=Hider] add pedestrian
-tag @a[team=Ghost] add Sneak
+#tag @a[team=Hider] add noCamera
+#tag @a[team=Ghost] add Sneak
 
 
 
