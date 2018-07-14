@@ -28,7 +28,7 @@ replaceitem entity @a[team=Hider] armor.head minecraft:carved_pumpkin
 #分配纸条注意下删除纸条是name而不是tag
 tag @e[tag=ZT,limit=12] add target
 replaceitem entity @e[tag=ZT,tag=target] armor.chest minecraft:paper{Damage:0s,Count:1b,tag:{display:{Name:"ZT"},}}
-title @a title {"text":"","extra":[{"text":"还剩下","bold":"true","color":"aqua"},{"score":{"name":"MB","objective":"MB"}},{"text":""},{"text":"张纸条","bold":"true","color":"aqua"}]}
+title @a title {"text":"","extra":[{"text":"还剩下","bold":"true","color":"aqua"},{"score":{"name":"PLeft","objective":"PLeft"}},{"text":""},{"text":"张纸条","bold":"true","color":"aqua"}]}
 
 #正常模式
 tag @a[team=Hider] add pedestrian
