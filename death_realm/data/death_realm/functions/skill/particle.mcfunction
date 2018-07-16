@@ -1,7 +1,7 @@
 #using tag:showGhostEffect to show ghost effect
 
 #玩家靠近鬼时显示
-tag @a[distance=..10,team=Hider] add showGhostEffect
+execute at @a[team=Ghost] run tag @a[distance=..10,team=Hider] add showGhostEffect
 #鬼跑的时候玩家和阵亡的玩家显示
 execute if entity @a[team=Ghost,scores={Sprint=1..}] run tag @a add showGhostEffect
 
