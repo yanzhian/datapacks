@@ -3,7 +3,7 @@
 #玩家靠近鬼时显示
 execute at @a[team=Ghost] run tag @a[distance=..10,team=Hider] add showGhostEffect
 #鬼跑的时候玩家和阵亡的玩家显示
-execute if entity @a[team=Ghost,scores={Sprint=1..}] run tag @a add showGhostEffect
+execute if entity @a[team=Ghost,scores={Sprint=1..}] run tag @a[team=!Ghost] add showGhostEffect
 
 #人类的jio印
 execute as @a[team=Hider,scores={Sprint=1..}] at @s run particle dripping_lava ~ ~0.2 ~ 0 0 0 0.01 13 force @a[team=Ghost]
