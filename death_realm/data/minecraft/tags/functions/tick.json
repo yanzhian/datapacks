@@ -6,7 +6,8 @@
       "death_realm:door/run",
 	    "death_realm:skill/invisible",
       "death_realm:skill/particle",
-      "death_realm:paper/inventory"
+      "death_realm:paper/inventory",
+      "death_realm:catch/main"
     ]
   }
   
