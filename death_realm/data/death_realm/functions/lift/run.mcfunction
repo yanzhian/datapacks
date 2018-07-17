@@ -6,7 +6,7 @@
 #电梯是否上升?  有玩家不上升 有人偶不上升  顶层了不上升
 execute at @e[tag=DTpl] positioned ~-1 ~ ~-1 if entity @e[type=armor_stand,dx=2,dy=1,dz=2,tag=Substitute] run scoreboard players set up Lift 0
 execute at @e[tag=DTpl] positioned ~-1 ~ ~-1 if entity @a[dx=2,dy=2,dz=2,gamemode=adventure,team=Hider] run scoreboard players set up Lift 0
-execute at @e[tag=stop] if entity @e[distance=..1,tag=DTstop] run scoreboard players set up Lift 0
+execute at @e[tag=stop] if entity @e[distance=0,tag=DTstop] run scoreboard players set up Lift 0
 execute if score up Lift matches 1 run function death_realm:lift/up
 
 #电梯是否下降?  有玩家下降 底层了不下降 有人偶不动     
@@ -14,7 +14,7 @@ execute at @e[tag=DTpl] positioned ~-1 ~ ~-1 if entity @a[dx=2,dy=2,dz=2,gamemod
 execute at @e[tag=Stop] if entity @e[distance=0,tag=DTstop] run scoreboard players set down Lift 0
 execute at @e[tag=DTpl] positioned ~-1 ~ ~-1 if entity @e[type=armor_stand,dx=2,dy=1,dz=2,tag=Substitute,team=Hider] run scoreboard players set down Lift 0
 execute if score down Lift matches 1 run function death_realm:lift/down
-scoreboard players set up Lift 0
+scoreboard players set up Lift 1
 scoreboard players set down Lift 0
 
 
@@ -22,7 +22,7 @@ execute at @e[type=armor_stand,tag=Stop] positioned ~ ~-0.5 ~ if entity @e[type=
 
 #电梯门指令 不想新开mcf了
 #up   open&close 1:电梯在上面
-execute at @e[tag=stop] if entity @e[distance=..1,tag=DTstop] run fill 3 61 95 3 63 95 air destroy
+execute at @e[tag=stop] if entity @e[distance=0,tag=DTstop] run fill 3 61 95 3 63 95 air destroy
 execute at @e[tag=stop] unless entity @e[distance=0,tag=DTstop] if block 3 61 95 air run fill 3 61 95 3 63 95 iron_bars
 #down open&close 1:电梯在下面
 execute at @e[tag=Stop] if entity @e[distance=0,tag=DTstop] run fill 3 41 95 3 43 95 air destroy
