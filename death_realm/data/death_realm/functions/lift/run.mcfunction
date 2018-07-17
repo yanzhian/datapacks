@@ -13,9 +13,6 @@ execute if score down Lift matches 1 run function death_realm:lift/down
 scoreboard players set up Lift 0
 scoreboard players set down Lift 0
 
-
-execute at @e[type=armor_stand,tag=Stop] positioned ~ ~-0.5 ~ if entity @e[type=armor_stand,distance=1,tag=DTstop] run scoreboard players set down Lift 0
-
 #电梯门指令 不想新开mcf了
 #up   open&close 1:电梯在上面
 execute at @e[tag=stop] if entity @e[distance=0,tag=DTstop] run fill 3 61 95 3 63 95 air destroy
