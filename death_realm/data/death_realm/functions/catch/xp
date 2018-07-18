@@ -1,0 +1,10 @@
+#重置
+xp set @a 0 levels 
+#执行人数
+execute if score Hider mapdata matches 1 run xp add @a 1 points
+execute if score Hider mapdata matches 2 run xp add @a 2 points
+execute if score Hider mapdata matches 3 run xp add @a 3 points
+execute if score Hider mapdata matches 4 run xp add @a 4 points
+execute if score Hider mapdata matches 5 run xp add @a 5 points
+execute if score Hider mapdata matches 6 run xp add @a 6 points
+execute if score Hider mapdata matches 7 run xp add @a 15 points
