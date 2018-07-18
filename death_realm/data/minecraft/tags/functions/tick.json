@@ -7,7 +7,8 @@
 	    "death_realm:skill/invisible",
       "death_realm:skill/particle",
       "death_realm:paper/inventory",
-      "death_realm:catch/main"
+      "death_realm:catch/main",
+      "death_realm:skill/distance"
     ]
   }
   
